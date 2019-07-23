@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+    </head>
+    
+    <body>
+        <script type="text/javascript">
+        
+            function soma() {
+                var valor_um = document.querySelector(".valor_um").value;
+                var valor_dois = document.querySelector(".valor_dois").value;
+                var soma;
+                soma = parseInt(valor_um) + parseInt(valor_dois);
+                document.querySelector(".soma").innerHTML = soma;
+            }
+        </script>
+
+        Primeiro valor:
+        <input class="valor_um" type="number"><br>
+        Segundo valor:
+        <input class="valor_dois" type="number"><br>
+        <button onclick="soma()">Somar</button>
+        <p class="soma"></p>
+        
+    </body>
+</html>
