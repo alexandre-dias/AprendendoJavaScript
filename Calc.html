@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="Styles.css">
         <title>Calculadora</title>
     </head>
     
@@ -10,49 +11,54 @@
                 var valor_um = document.querySelector(".valor_um").value;
                 var valor_dois = document.querySelector(".valor_dois").value;
                 var soma;
-                soma = parseInt(valor_um) + parseInt(valor_dois);
-                document.querySelector(".resultado").innerHTML = soma;
+                    soma = parseInt(valor_um) + parseInt(valor_dois);
+                    document.querySelector(".resultado").innerHTML = soma;
             }
             
             function sub() {
                 var valor_um = document.querySelector(".valor_um").value;
                 var valor_dois = document.querySelector(".valor_dois").value;
                 var sub;
-                sub = parseInt(valor_um) - parseInt(valor_dois);
-                document.querySelector(".resultado").innerHTML = sub;
+                    sub = parseInt(valor_um) - parseInt(valor_dois);
+                    document.querySelector(".resultado").innerHTML = sub;
             }
             
             function mult() {
                 var valor_um = document.querySelector(".valor_um").value;
                 var valor_dois = document.querySelector(".valor_dois").value;
                 var mult;
-                mult = parseInt(valor_um) * parseInt(valor_dois);
-                document.querySelector(".resultado").innerHTML = mult;
+                    mult = parseInt(valor_um) * parseInt(valor_dois);
+                    document.querySelector(".resultado").innerHTML = mult;
             }
             
             function div() {
                 var valor_um = document.querySelector(".valor_um").value;
                 var valor_dois = document.querySelector(".valor_dois").value;
                 var div;
-                div = parseFloat(valor_um) / parseFloat(valor_dois);
-                document.querySelector(".resultado").innerHTML = div;
+                    div = parseFloat(valor_um) / parseFloat(valor_dois);
+                    document.querySelector(".resultado").innerHTML = div;
             }
             
             function cred() {
                 alert('Code by Alexandre Dias')
             }
+            
         </script>
-
-        Primeiro valor:
-        <input class="valor_um" type="number"><br><br>
-        Segundo valor:
-        <input class="valor_dois" type="number"><br><br>
-        <button onclick="soma()">Somar</button>
-        <button onclick="sub()">Subtrair</button>
-        <button onclick="mult()">Multiplicar</button>
-        <button onclick="div()">Dividir</button><br><br>
-        Resultado: <p class="resultado"></p><br>
-        <button onclick="cred()">Créditos</button>
+        
+        <h2 id="titulo">Calculadora Simples</h2>
+        
+        <div id="corpo">
+            Primeiro valor<br>
+                <input class="valor_um" type="number"><br><br>
+            Segundo valor<br>
+                <input class="valor_dois" type="number"><br><br>
+                <button onclick="soma()">Somar</button>
+                <button onclick="sub()">Subtrair</button>
+                <button onclick="mult()">Multiplicar</button>
+                <button onclick="div()">Dividir</button><br><br>
+            Resultado <p class="resultado"></p><br>
+                <button onclick="cred()">Créditos</button>
+        </div>
         
     </body>
 </html>
